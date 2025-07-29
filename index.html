@@ -7,32 +7,55 @@
   <style>
     body {
       background-color: #0e0e0e;
+      background-image: url('img/qr-morse.png'); /* watermark background */
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 120px;
+      background-blend-mode: soft-light;
       color: #d6d6d6;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 30px;
     }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+      border-radius: 6px;
+    }
+
     h1 {
       color: #ff0040;
     }
+
     .tiers {
       margin-top: 30px;
     }
+
     .tiers select {
       padding: 10px;
       background-color: #222;
       color: #fff;
       border: 1px solid #444;
     }
+
     .contact {
       margin-top: 30px;
     }
+
     .img-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
       margin-top: 30px;
     }
+
     .img-grid img {
       width: 100%;
       border-radius: 10px;
@@ -40,6 +63,12 @@
   </style>
 </head>
 <body>
+
+  <!-- Top-left logo with hidden message -->
+  <div class="logo">
+    <img src="img/logo.png" alt="Private Logo" />
+  </div>
+
   <h1>Private Access Zone</h1>
   <p>Access restricted. Verified buyers only.</p>
   <p>Visit <strong>http://veilxyz.onion</strong> on TOR</p>
@@ -63,5 +92,6 @@
     <img src="img/image2.jpg" alt="Landmark clue 2" />
     <img src="img/image3.jpg" alt="Mysterious clue 3" />
   </div>
+
 </body>
 </html>
